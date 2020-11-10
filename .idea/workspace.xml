@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50e82268-edd1-4587-b53b-e78763a43ce2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ProjectId" id="1jlpNAECGahyiJKnyWUOzknlasa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lib_jars/mysql-connector-java-8.0.22.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEADocument\LibraryManagementSystem\images" />
+      <recent name="E:\IDEADocument\LibraryManagementSystem\src\edu\yangtzeu\lmis\gui\commons" />
+      <recent name="E:\IDEADocument\LibraryManagementSystem\src\edu\yangtzeu\lmis\model" />
+      <recent name="E:\IDEADocument\LibraryManagementSystem\src\edu\yangtzeu\lmis\gui" />
+      <recent name="E:\IDEADocument\LibraryManagementSystem\src\edu\yangtzeu\lmis\dal" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.yangtzeu.lmis.gui.Login" />
+      <module name="LibraryManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.yangtzeu.lmis.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Login" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50e82268-edd1-4587-b53b-e78763a43ce2" name="Default Changelist" comment="" />
+      <created>1604388489155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604388489155</updated>
+      <workItem from="1604388495052" duration="6084000" />
+      <workItem from="1604407864246" duration="5074000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604410715263">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604410715263" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1604409953453">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604409953453" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604412942766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604412942766" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604412942766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604412942766" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604412942766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604412942766" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604412942766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604412942766" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1604409688639">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604409688639" />
+    <state x="499" y="191" key="extract.method.dialog" timestamp="1604395113399">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="191" key="extract.method.dialog/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604395113399" />
+    <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1604411671555">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="11" width="642" height="801" key="find.popup/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604411671555" />
+    <state x="470" y="40" key="refactoring.ChangeSignatureDialog" timestamp="1604411264671">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="470" y="40" key="refactoring.ChangeSignatureDialog/0.0.1536.824/1920.169.1600.860@0.0.1536.824" timestamp="1604411264671" />
+  </component>
+</project>

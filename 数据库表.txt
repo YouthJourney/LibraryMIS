@@ -1,0 +1,102 @@
+-- (1)创建读者类别表并插入数据
+create table TB_ReaderType(
+	rdType smallint primary key,
+	rdTypeName nvarchar(20) not null unique,
+	CanLendQty int,
+	CanLendDay int,
+	CanContinueTimes int,
+	PunishRate float,
+	DateValid smallint default 0
+);
+
+insert into TB_ReaderType values
+(10,'教师',		12,60,2,0.05,0),
+(20,'本科生',    8,30,1,0.05,4),
+(21,'专科生',    8,30,1,0.05,3),
+(30,'硕士研究生',8,30,1,0.05,3),
+(31,'博士研究生',8,30,1,0.05,4);
+
+-- (2)创建读者表并插入数据
+create table TB_Reader(
+	rdID int primary key,
+	rdName nvarchar(20),
+	rdSex nchar(1),
+	rdType smallint references TB_ReaderType(rdType),
+	rdDept nvarchar(20),
+	rdPhone nvarchar(25),
+	rdEmail nvarchar(25),
+	rdDateReg datetime default NOW(),
+	rdPhoto binary,
+	rdStatus nchar(2) default '有效',
+	rdBorrowQty int default 0,
+	rdPwd nvarchar(20),
+	rdAdminRoles smallint default 0
+);
+
+insert into TB_Reader(rdID,rdName,rdPwd,rdType,rdDept,rdAdminRoles) values
+(1,	'刘二',	'123',	10,	'图书馆',	8),-- 系统管理员
+(2,	'张三',	'123',	10,	'图书馆',	1),-- 读者(借书证)管理员
+(3,	'李四',	'123',	10,	'图书馆',	2),-- 图书管理员
+(4,	'王五',	'123',	10,	'图书馆',	4),-- 借还书管理员
+(5,	'丁一',	'123',	10,	'图书馆',	6),-- 图书管理员、借还书管理员
+(6,	'李胜',	'123',	10,	'图书馆',	7),-- 读者管理员、图书管理员、借还书管理员
+(7,	'刘涛',	'123',	10,	'图书馆',	15);-- 读者管理员、图书管理员、借还书管理员、系统管理员
+
+insert into TB_Reader(rdID,rdName,rdPwd,rdSex,rdType,rdDept) values
+(100, '王强', '123', '男', 10, '计科11601'),
+(101, '李丽', '123', '女', 10, '软工11601'),
+(102, '王艳', '123', '女', 10, '计科11602'),
+(103, '李伟', '123', '男', 10, '硕计11701');
+
+-- (3)创建图书表并插入测试数据
+create table TB_Book(
+	bkID int auto_increment primary key,
+	bkCode nvarchar(20) not null,
+	bkName nvarchar(50),
+	bkAuthor nvarchar(30),
+	bkPress nvarchar(50),
+	bkDatePress datetime,
+	bkISBN nvarchar(15),
+	bkCatalog nvarchar(30),
+	bkLanguage smallint,
+	bkPages int,
+	bkPrice decimal(5, 2),
+	bkDateIn datetime default NOW(),
+	bkBrief text,
+	bkCover binary,
+	bkStatus nchar(2) default '在馆'
+);
+insert into TB_Book(bkCode,bkName,bkAuthor,bkPress,bkISBN,bkCatalog,bkPrice) values
+(10000,'UML和模式应用(第2版)','Craig Larman著 方梁等译','机械工业出版社','7-111-14518-6','TP312/12-3',59.0),
+(10001,'Java程序设计','Craig Larman著 方梁等译','机械工业出版社','7-111-14518-6','TP312/12-3',59.0),
+(10002,'计算机组成原理','白中英著','机械工业出版社','7-111-14518-6','TP312/12-3',59.0),
+(10003,'C#程序设计','谭浩强著','机械工业出版社','7-111-14518-6','TP312/12-3',59.0),
+(10004,'数据库原理','Craig Larman著 方梁等译','机械工业出版社','7-111-14518-6','TP312/12-3',59.0),
+(10005,'web程序设计','Craig Larman著 方梁等译','机械工业出版社','7-111-14518-6','TP312/12-3',59.0),
+(10006,'软件体系架构','Craig Larman著 方梁等译','机械工业出版社','7-111-14518-6','TP312/12-3',59.0);
+
+-- (4)创建借阅表
+create table TB_Borrow(
+	BorrowID int auto_increment primary key,
+	rdID int not null references TB_Reader(rdID),
+	bkID int not null references TB_Book(bkID),
+	IdContinueTimes int,
+	IdDateOut datetime not null,
+	IdDateRetPlan datetime,
+	IdDateRetAct datetime,
+	IdOverDay int,
+	IdOverMoney decimal(5, 2),
+	IdPunishMoney decimal(5, 2),
+	IsHasReturn bit,
+	OperatorLend nvarchar(20),
+	OperatorRet nvarchar(20)
+)AUTO_INCREMENT = 100000000000;
+
+--(5)创建单位类型表
+create table TB_DepartmentType
+(
+	dtType int primary key,
+	dtName nvarchar(20),
+	dtAddress nvarchar(50),
+	dtPhone nvarchar(25)
+);
